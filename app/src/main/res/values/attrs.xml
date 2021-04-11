@@ -272,4 +272,6 @@
     <declare-styleable name="WarningTextView">
         <attr name="warning_text_color" format="color|reference" />
     </declare-styleable>
+
+
 </resources>

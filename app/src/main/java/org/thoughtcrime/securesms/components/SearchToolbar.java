@@ -20,7 +20,7 @@ import androidx.core.content.ContextCompat;
 
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.animation.AnimationCompleteListener;
-
+import org.thoughtcrime.securesms.components.SearchCal;
 public class SearchToolbar extends LinearLayout {
 
   private float x, y;
@@ -45,12 +45,17 @@ public class SearchToolbar extends LinearLayout {
   private void initialize() {
     inflate(getContext(), R.layout.search_toolbar, this);
     setOrientation(VERTICAL);
-
+    inflate(getContext(), R.layout.search_cal, this);
+    setOrientation(HORIZONTAL);
     Toolbar toolbar = findViewById(R.id.toolbar);
 
     Drawable drawable = ContextCompat.getDrawable(getContext(), R.drawable.ic_arrow_left_24);
     toolbar.setNavigationIcon(drawable);
     toolbar.setCollapseIcon(drawable);
+    toolbar.inflateMenu(R.menu.conversation_list_search);
+    Drawable drawable1 = ContextCompat.getDrawable(getContext(), R.drawable.ic_baseline_calendar_today_24);
+    toolbar.setNavigationIcon(drawable1);
+    toolbar.setCollapseIcon(drawable1);
     toolbar.inflateMenu(R.menu.conversation_list_search);
 
     this.searchItem = toolbar.getMenu().findItem(R.id.action_filter_search);
