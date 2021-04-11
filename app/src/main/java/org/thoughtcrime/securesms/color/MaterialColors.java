@@ -25,7 +25,9 @@ public class MaterialColors {
       MaterialColor.FOREST,
       MaterialColor.WINTERGREEN,
       MaterialColor.BURLAP,
-      MaterialColor.STEEL
+      MaterialColor.YELLOW,
+      MaterialColor.PAPAYA,
+      MaterialColor.PASTELBLUE
   )));
 
   public static class MaterialColorList {

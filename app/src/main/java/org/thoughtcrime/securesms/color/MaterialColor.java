@@ -19,6 +19,9 @@ public enum MaterialColor {
   CRIMSON    (R.color.conversation_crimson,     R.color.conversation_crimson_tint,     R.color.conversation_crimson_shade,     "red"),
   VERMILLION (R.color.conversation_vermillion,  R.color.conversation_vermillion_tint,  R.color.conversation_vermillion_shade,  "orange"),
   BURLAP     (R.color.conversation_burlap,      R.color.conversation_burlap_tint,      R.color.conversation_burlap_shade,      "brown"),
+  YELLOW     (R.color.conversation_yellow,      R.color.conversation_yellow_tint,      R.color.conversation_yellow_shade,      "yellow"),
+  PAPAYA     (R.color.conversation_papaya,      R.color.conversation_papaya_tint,      R.color.conversation_papaya_shade,      "papaya"),
+  PASTELBLUE (R.color.conversation_pastelBlue,  R.color.conversation_pastelBlue_tint,  R.color.conversation_pastelBlue_shade,  "pastelBlue"),
   FOREST     (R.color.conversation_forest,      R.color.conversation_forest_tint,      R.color.conversation_forest_shade,      "green"),
   WINTERGREEN(R.color.conversation_wintergreen, R.color.conversation_wintergreen_tint, R.color.conversation_wintergreen_shade, "light_green"),
   TEAL       (R.color.conversation_teal,        R.color.conversation_teal_tint,        R.color.conversation_teal_shade,        "teal"),
@@ -31,13 +34,16 @@ public enum MaterialColor {
   ULTRAMARINE(R.color.conversation_ultramarine, R.color.conversation_ultramarine_tint, R.color.conversation_ultramarine_shade, "ultramarine"),
   GROUP      (R.color.conversation_group,       R.color.conversation_group_tint,       R.color.conversation_group_shade,       "blue");
 
+
   private static final Map<String, MaterialColor> COLOR_MATCHES = new HashMap<String, MaterialColor>() {{
     put("red",         CRIMSON);
     put("deep_orange", CRIMSON);
     put("orange",      VERMILLION);
     put("amber",       VERMILLION);
     put("brown",       BURLAP);
-    put("yellow",      BURLAP);
+    put("yellow",      YELLOW);
+    put("papaya",      PAPAYA);
+    put("pastelBlue",  PASTELBLUE);
     put("pink",        PLUM);
     put("purple",      VIOLET);
     put("deep_purple", VIOLET);
