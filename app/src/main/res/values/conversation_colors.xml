@@ -12,18 +12,6 @@
     <color name="conversation_burlap_tint">#c4b997</color>
     <color name="conversation_burlap_shade">#58513c</color>
 
-    <color name="conversation_yellow">#fdd017</color>
-    <color name="conversation_yellow_tint">#fff380</color>
-    <color name="conversation_yellow_shade">#ffff00</color>
-
-    <color name="conversation_papaya">#ffa500</color>
-    <color name="conversation_papaya_tint">#e18b6b</color>
-    <color name="conversation_papaya_shade">#e56717</color>
-
-    <color name="conversation_pastelBlue">#85e3ff</color>
-    <color name="conversation_pastelBlue_tint">#ace7ff</color>
-    <color name="conversation_pastelBlue_shade">#6eb5ff</color>
-
     <color name="conversation_forest">#3b7845</color>
     <color name="conversation_forest_tint">#8fcc9a</color>
     <color name="conversation_forest_shade">#2b5934</color>
@@ -67,5 +55,17 @@
     <color name="conversation_group">@color/core_ultramarine</color>
     <color name="conversation_group_tint">#b0c8f9</color>
     <color name="conversation_group_shade">#1851b4</color>
+
+    <color name="conversation_yellow">#fdd017</color>
+    <color name="conversation_yellow_tint">#fff380</color>
+    <color name="conversation_yellow_shade">#ffff00</color>
+
+    <color name="conversation_papaya">#ffa500</color>
+    <color name="conversation_papaya_tint">#e18b6b</color>
+    <color name="conversation_papaya_shade">#e56717</color>
+
+    <color name="conversation_pastelBlue">#85e3ff</color>
+    <color name="conversation_pastelBlue_tint">#ace7ff</color>
+    <color name="conversation_pastelBlue_shade">#6eb5ff</color>
 
 </resources>
