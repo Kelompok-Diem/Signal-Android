@@ -6,6 +6,7 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewAnimationUtils;
@@ -52,6 +53,17 @@ public class SearchToolbar extends LinearLayout {
     toolbar.setNavigationIcon(drawable);
     toolbar.setCollapseIcon(drawable);
     toolbar.inflateMenu(R.menu.conversation_list_search);
+    toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+      @Override
+      public boolean onMenuItemClick(MenuItem item) {
+        if (item.getItemId() == R.id.search_by_date) {
+          Log.i("Search Toolbar", "Foobar");
+          return true;
+        }
+
+        return true;
+      }
+    });
 
     this.searchItem = toolbar.getMenu().findItem(R.id.action_filter_search);
     SearchView searchView = (SearchView) searchItem.getActionView();
@@ -151,5 +163,4 @@ public class SearchToolbar extends LinearLayout {
     void onSearchTextChange(String text);
     void onSearchClosed();
   }
-
 }
